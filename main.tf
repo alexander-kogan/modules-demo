@@ -10,6 +10,7 @@
 # License for the specific language governing permissions and limitations under the License.
 provider "aws" {
   region = "${var.region}"
+  profile ="terraform-ww"
 }
 module "site" {
   source = "./site"
